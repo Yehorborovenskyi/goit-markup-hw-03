@@ -34,18 +34,20 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+.section {
+  background: #f5f5f5;
+}
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .nav-header {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ecec;
 }
 
 .nav-list {
@@ -281,7 +283,7 @@ ul {
 .btn-filtr {
   display: flex;
   padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -307,6 +309,9 @@ ul {
   border-color: transparent;
 }
 
+.filtr-card {
+  border-bottom: 1px solid #eeeeee;
+}
 .flex-filtr {
   display: flex;
   flex-wrap: wrap;
@@ -334,7 +339,8 @@ ul {
   background-color: var(--hover-text-color);
 }
 
-.filtr-text {
+.filtr-card:not(:nth-child(n + 7)) {
+  margin-bottom: 30px;
 }
 
 .filtr-title {
